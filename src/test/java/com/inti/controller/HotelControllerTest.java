@@ -15,8 +15,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.inti.model.Hotel;
 import com.inti.repository.IHotelRepository;
 
-@WebMvcTest(controllers = HotelController.class)
-public class HotelController {
+@WebMvcTest(controllers = HotelControllerTest.class)
+public class HotelControllerTest {
 	
 	@Autowired
 	private MockMvc mock;
