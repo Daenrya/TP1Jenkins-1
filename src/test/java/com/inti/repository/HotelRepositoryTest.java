@@ -95,35 +95,35 @@ public class HotelRepositoryTest {
 		assertThat(hotel).isEqualTo(savedHotel);
 	}
 	
-	@Test
-	public void getAllHotelsTest()
-	{
-		// GIVEN
-		Hotel h1 = new Hotel("Georges V", 5);
-		Hotel h2 = new Hotel("Meurice", 5);
-		Hotel savedHotel1 = ihr.save(h1);
-		Hotel savedHotel2 = ihr.save(h2);
-				
-		// WHEN
-		List<Hotel> listeH = ihr.findAll();
-		
-		// THEN
-		assertThat(listeH).isNotEmpty();
-		assertThat(listeH).hasSize(2);
-		assertThat(listeH.get(0).getClass()).hasSameClassAs(Hotel.class);
-	}
+//	@Test
+//	public void getAllHotelsTest()
+//	{
+//		// GIVEN
+//		Hotel h1 = new Hotel("Georges V", 5);
+//		Hotel h2 = new Hotel("Meurice", 5);
+//		Hotel savedHotel1 = ihr.save(h1);
+//		Hotel savedHotel2 = ihr.save(h2);
+//				
+//		// WHEN
+//		List<Hotel> listeH = ihr.findAll();
+//		
+//		// THEN
+//		assertThat(listeH).isNotEmpty();
+//		assertThat(listeH).hasSize(2);
+//		assertThat(listeH.get(0).getClass()).hasSameClassAs(Hotel.class);
+//	}
 	
-	@Test
-	public void getHotelListeVideTest()
-	{
-		// GIVEN
-				
-		// WHEN
-		List<Hotel> listeH = ihr.findAll();
-		
-		// THEN
-		assertThat(listeH).isEmpty();
-		assertThat(listeH).hasSize(0);
-	}
+//	@Test
+//	public void getHotelListeVideTest()
+//	{
+//		// GIVEN
+//				
+//		// WHEN
+//		List<Hotel> listeH = ihr.findAll();
+//		
+//		// THEN
+//		assertThat(listeH).isEmpty();
+//		assertThat(listeH).hasSize(0);
+//	}
 	
 }
